@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e518678f9354641820becc1a90140a, type: 3}
   m_Name: Gameplay Data
   m_EditorClassIdentifier: 
-  TimerToWin: 300
+  TimerToWin: 70

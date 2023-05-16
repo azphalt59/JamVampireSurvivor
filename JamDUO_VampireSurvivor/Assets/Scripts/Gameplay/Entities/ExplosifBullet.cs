@@ -6,12 +6,17 @@ public class ExplosifBullet : MonoBehaviour
 {
     [SerializeField] int _team;
     [SerializeField] float _timeToLive = 10.0f;
-    [SerializeField] GameObject explosifArea;
+    
     [SerializeField] ParticleSystem ExplosifPillFX;
+    [SerializeField] float radius = 1f;
+    [SerializeField] float height = 2f;
+    [SerializeField] GameObject mesh;
+    [SerializeField] GameObject area;
 
     float _speed = 10;
     float _damage = 5;
     Vector3 _direction;
+    bool move = true;
 
     public void Initialize(Vector3 direction, float damage, float speed)
     {
@@ -30,8 +35,12 @@ public class ExplosifBullet : MonoBehaviour
 
     void Update()
     {
-        transform.position += _direction * _speed * Time.deltaTime;
-        transform.position = new Vector3(transform.position.x, 0.3f, transform.position.z);
+        if(move)
+        {
+            transform.position += _direction * _speed * Time.deltaTime;
+            transform.position = new Vector3(transform.position.x, 0.3f, transform.position.z);
+        }
+      
         transform.Rotate(0, 240f * Time.deltaTime, 0);
     }
 
@@ -45,15 +54,31 @@ public class ExplosifBullet : MonoBehaviour
         }
         else if (other.Team != _team)
         {
-            Explosion();
+            Explosion(transform.position, _direction);
         }
     }
 
-    void Explosion()
+    void Explosion(Vector3 pos, Vector3 dir)
     {
+        move = false;
         ExplosifPillFX.Play();
-        explosifArea.SetActive(true);
+        Destroy(gameObject, 1.5f);
+        mesh.SetActive(false);
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
+
+        foreach (Collider collider in colliders)
+        {
+            Unit unit = collider.GetComponent<Unit>();
+
+            if (unit != null)
+            {
+                if(unit.Team != _team)
+                {
+                    Debug.Log("explosion dmg");
+                    unit.Hit(_damage);
+                }
+             
+            }
+        }   
     }
-
-
 }
