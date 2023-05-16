@@ -26,5 +26,5 @@ MonoBehaviour:
         _damageMax: 40
         _coolDown: 5
         _projectileCount: 0
-        _prefab: {fileID: 0}
-        _speed: 0
+        _prefab: {fileID: 8546515989164397420, guid: 17184d3554ddf2e4aa397799a75dfe14, type: 3}
+        _speed: 18

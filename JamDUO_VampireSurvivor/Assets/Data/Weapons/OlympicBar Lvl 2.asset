@@ -27,4 +27,4 @@ MonoBehaviour:
         _coolDown: 1.5
         _projectileCount: 2
         _prefab: {fileID: 8546515989164397420, guid: 36b9dfb51ab5f334e9f360e248e18c61, type: 3}
-        _speed: 5
+        _speed: 12
