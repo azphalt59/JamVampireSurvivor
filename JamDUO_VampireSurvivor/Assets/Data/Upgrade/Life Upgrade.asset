@@ -15,7 +15,7 @@ MonoBehaviour:
   _description: '+ 30 % Hp
 
 '
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 413584906, guid: 722cf4a2878dfbe458388500aee01bbf, type: 3}
   _upgrade:
     rid: 4244087758780628994
   _nextUpgrades:

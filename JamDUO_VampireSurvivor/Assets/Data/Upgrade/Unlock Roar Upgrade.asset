@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46a8eaf7f7549014c8d97c971d54d2b0, type: 3}
   m_Name: Unlock Roar Upgrade
   m_EditorClassIdentifier: 
-  _description: 
-  _sprite: {fileID: 0}
+  _description: "Le bodybuilder \xE9met une aura destructruice autour de lui( plus
+    de d\xE9g\xE2ts)."
+  _sprite: {fileID: 21300000, guid: c8a6bd08243ba034b9f299eb3251679c, type: 3}
   _upgrade:
     rid: 4244087758780629010
   _nextUpgrades:

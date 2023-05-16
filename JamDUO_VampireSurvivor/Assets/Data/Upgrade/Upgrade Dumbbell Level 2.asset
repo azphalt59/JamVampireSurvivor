@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46a8eaf7f7549014c8d97c971d54d2b0, type: 3}
   m_Name: Upgrade Dumbbell Level 2
   m_EditorClassIdentifier: 
-  _description: Dumbbell lvl 2
-  _sprite: {fileID: 0}
+  _description: "Lance plus d'halt\xE8res."
+  _sprite: {fileID: 21300000, guid: 78e72f3c25927524798328d02913010b, type: 3}
   _upgrade:
     rid: 4244087758780628995
   _nextUpgrades:
