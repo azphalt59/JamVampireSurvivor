@@ -26,29 +26,22 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         GameObject.Destroy(gameObject, _timeToLive);
-        Vector3 lookDir = (transform.position + _direction) - transform.position;
-        var dir = _direction;
-        dir.x = 0;
-        dir.z = 0;
-        transform.LookAt(lookDir);
-        //transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+        transform.position = new Vector3(transform.position.x, 0.3f, transform.position.z);
+
     }
 
     void Update()
     {
         transform.position += _direction * _speed * Time.deltaTime;
-        transform.GetChild(0).Rotate(new Vector3(5, 0, 0));
+        transform.Rotate(0, 240f * Time.deltaTime, 0);
     }
 
     private void OnTriggerEnter(Collider col)
     {
         var other = HitWithParent.GetComponent<Unit>(col);
 
-        if (other == null)
-        {
-            GameObject.Destroy(gameObject);
-        }
-        else if (other.Team != _team)
+      
+        if (other.Team != _team)
         {
             GameObject.Destroy(gameObject);
 

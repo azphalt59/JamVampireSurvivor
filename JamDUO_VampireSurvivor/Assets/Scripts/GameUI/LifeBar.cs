@@ -24,4 +24,9 @@ public class LifeBar : MonoBehaviour
         _spriteRenderer.transform.localScale = localScale;
     }
 
+    public void Update()
+    {
+        transform.LookAt(Camera.main.transform);
+    }
+
 }
