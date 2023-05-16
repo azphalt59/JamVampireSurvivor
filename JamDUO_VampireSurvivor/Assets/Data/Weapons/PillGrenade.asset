@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca8c8437b00b3a4ca793e4e5492b008, type: 3}
+  m_Name: PillGrenade
+  m_EditorClassIdentifier: 
+  _weapon:
+    rid: 3428052229981208578
+  _slotIndex: 4
+  _projectileCount: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3428052229981208578
+      type: {class: WeaponExplosifPill, ns: , asm: Assembly-CSharp}
+      data:
+        _damageMin: 40
+        _damageMax: 40
+        _coolDown: 5
+        _projectileCount: 0
+        _prefab: {fileID: 0}
+        _speed: 0
