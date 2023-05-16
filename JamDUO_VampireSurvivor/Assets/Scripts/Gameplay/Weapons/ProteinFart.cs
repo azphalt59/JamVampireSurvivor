@@ -10,7 +10,7 @@ public class ProteinFart : MonoBehaviour
     public float scaleMultiplier = 5;
     private void Start()
     {
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 0.8f);
         RoarFx.gameObject.transform.localScale = new Vector3(2*scaleMultiplier, 2*scaleMultiplier, 2*scaleMultiplier);
         RoarFx.Play();
     }

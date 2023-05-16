@@ -17,6 +17,8 @@ public class EnemyController : Unit
     EnemyData _data;
     private List<PlayerController> _playersInTrigger = new List<PlayerController>();
     int _xpValue;
+    [SerializeField] private ParticleSystem HitFx;
+    [SerializeField] private ParticleSystem DeathFx;
 
     private void Awake()
     {
@@ -75,9 +77,14 @@ public class EnemyController : Unit
     public override void Hit(float damage)
     {
         _life -= damage;
-
+        HitFx.gameObject.transform.position = transform.position;
+        if(Life>0)
+            HitFx.Play();
+       
         if (Life <= 0)
         {
+            DeathFx.gameObject.transform.position = transform.position;
+            DeathFx.Play();
             Die();
         }
     }
@@ -85,7 +92,9 @@ public class EnemyController : Unit
     void Die()
     {
         MainGameplay.Instance.Enemies.Remove(this);
-        GameObject.Destroy(gameObject);
+        gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        gameObject.GetComponent<Collider>().enabled = false;
+        GameObject.Destroy(gameObject, 1f);
         var xp = GameObject.Instantiate(MainGameplay.Instance.PrefabXP, transform.position, Quaternion.identity);
         xp.GetComponent<CollectableXp>().Initialize(_xpValue);
     }

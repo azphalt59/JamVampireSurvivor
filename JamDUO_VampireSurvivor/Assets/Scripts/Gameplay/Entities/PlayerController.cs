@@ -64,7 +64,7 @@ public class PlayerController : Unit
 
         if ( Input.GetKeyDown(KeyCode.F5))
         {
-            CollectXP(3);
+            CollectXP(20);
         }
     }
 
