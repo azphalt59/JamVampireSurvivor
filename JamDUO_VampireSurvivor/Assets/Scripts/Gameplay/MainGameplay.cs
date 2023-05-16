@@ -33,6 +33,7 @@ public class MainGameplay : MonoBehaviour
     [SerializeField] GameUIManager _gameUIManager;
 
     [SerializeField] GameObject _prefabXp;
+    [SerializeField] GameObject _hitFx;
 
     #endregion
     
@@ -44,6 +45,7 @@ public class MainGameplay : MonoBehaviour
     public GameState State { get; private set; }
     public List<EnemyController> Enemies => _enemies;
     public GameUIManager GameUIManager => _gameUIManager;
+    public GameObject HitFx => _hitFx;
 
     #endregion
 

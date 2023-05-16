@@ -17,6 +17,7 @@ public class EnemyController : Unit
     EnemyData _data;
     private List<PlayerController> _playersInTrigger = new List<PlayerController>();
     int _xpValue;
+    [SerializeField] private ParticleSystem HitFx;
 
     private void Awake()
     {
@@ -75,7 +76,9 @@ public class EnemyController : Unit
     public override void Hit(float damage)
     {
         _life -= damage;
-
+        HitFx.gameObject.transform.position = transform.position;
+        HitFx.Play();
+       
         if (Life <= 0)
         {
             Die();

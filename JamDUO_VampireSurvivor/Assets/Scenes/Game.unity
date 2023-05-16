@@ -919,6 +919,7 @@ MonoBehaviour:
   _data: {fileID: 11400000, guid: ce779eea9edaf8e4cb7d372f9539eeb5, type: 2}
   _gameUIManager: {fileID: 1219623453}
   _prefabXp: {fileID: 6183063873905482681, guid: b0a3c9e3ad3e23e43815680396aa9114, type: 3}
+  _hitFx: {fileID: 2672230849847534129, guid: aba5f4fdb4135aa4e90a260e7ee2c954, type: 3}
 --- !u!114 &1219623452
 MonoBehaviour:
   m_ObjectHideFlags: 0
