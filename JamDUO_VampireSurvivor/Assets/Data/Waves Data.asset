@@ -48,3 +48,59 @@ MonoBehaviour:
     _enemy: {fileID: 11400000, guid: d21d108016de4ac458bc0ec496d91927, type: 2}
     _movementType: 0
     _spawnDistance: 12
+  - _timeToStart: 30
+    _timesToRepeat: 2
+    _repeatTimer: 6
+    _enemyCount: 2
+    _enemy: {fileID: 11400000, guid: d21d108016de4ac458bc0ec496d91927, type: 2}
+    _movementType: 0
+    _spawnDistance: 12
+  - _timeToStart: 30
+    _timesToRepeat: 2
+    _repeatTimer: 6
+    _enemyCount: 2
+    _enemy: {fileID: 11400000, guid: b7a9f04459ab9ed45858805ddc043532, type: 2}
+    _movementType: 0
+    _spawnDistance: 16
+  - _timeToStart: 30
+    _timesToRepeat: 2
+    _repeatTimer: 6
+    _enemyCount: 2
+    _enemy: {fileID: 11400000, guid: 672d9c22e07eba7438132f8ca113ae1e, type: 2}
+    _movementType: 0
+    _spawnDistance: 12
+  - _timeToStart: 22
+    _timesToRepeat: 2
+    _repeatTimer: 6
+    _enemyCount: 12
+    _enemy: {fileID: 11400000, guid: d21d108016de4ac458bc0ec496d91927, type: 2}
+    _movementType: 0
+    _spawnDistance: 22
+  - _timeToStart: 35
+    _timesToRepeat: 12
+    _repeatTimer: 6
+    _enemyCount: 12
+    _enemy: {fileID: 11400000, guid: d21d108016de4ac458bc0ec496d91927, type: 2}
+    _movementType: 0
+    _spawnDistance: 22
+  - _timeToStart: 35
+    _timesToRepeat: 12
+    _repeatTimer: 6
+    _enemyCount: 3
+    _enemy: {fileID: 11400000, guid: 672d9c22e07eba7438132f8ca113ae1e, type: 2}
+    _movementType: 0
+    _spawnDistance: 22
+  - _timeToStart: 35
+    _timesToRepeat: 12
+    _repeatTimer: 6
+    _enemyCount: 3
+    _enemy: {fileID: 11400000, guid: 43b45f9e0ae89644ebc262d9d7646403, type: 2}
+    _movementType: 0
+    _spawnDistance: 35
+  - _timeToStart: 41
+    _timesToRepeat: 15
+    _repeatTimer: 6
+    _enemyCount: 3
+    _enemy: {fileID: 11400000, guid: b7a9f04459ab9ed45858805ddc043532, type: 2}
+    _movementType: 0
+    _spawnDistance: 35

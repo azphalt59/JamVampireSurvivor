@@ -15,6 +15,7 @@ MonoBehaviour:
   _weapon:
     rid: 4244087758780629011
   _slotIndex: 2
+  _projectileCount: 0
   references:
     version: 2
     RefIds:
@@ -24,7 +25,8 @@ MonoBehaviour:
         _damageMin: 8
         _damageMax: 15
         _coolDown: 2.5
-        duration: 0.75
+        _projectileCount: 0
+        duration: 0.5
         fartArea: {fileID: 1302000748841523032, guid: 90d7d25dc502d1747868517d54692b37, type: 3}
         _speed: 0
-        _radius: 3.5
+        _radius: 2.8

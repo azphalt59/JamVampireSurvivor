@@ -15,6 +15,7 @@ MonoBehaviour:
   _weapon:
     rid: 4244087758780628992
   _slotIndex: 0
+  _projectileCount: 0
   references:
     version: 2
     RefIds:
@@ -23,6 +24,7 @@ MonoBehaviour:
       data:
         _damageMin: 25
         _damageMax: 25
-        _coolDown: 0.6
+        _coolDown: 0.25
+        _projectileCount: 0
         _prefab: {fileID: 8546515989164397420, guid: 427725f8344a3d1419a945bccb0947ea, type: 3}
-        _speed: 12
+        _speed: 16

@@ -29,7 +29,7 @@ public class BulletOlympic : MonoBehaviour
     {
         transform.position += _direction * _speed * Time.deltaTime;
         transform.position = new Vector3(transform.position.x, 0.3f, transform.position.z);
-        transform.Rotate(0, 240f * Time.deltaTime, 0);
+        transform.LookAt(transform.position - _direction);
     }
     private void OnTriggerEnter(Collider col)
     {
