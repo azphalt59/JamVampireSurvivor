@@ -21,10 +21,10 @@ MonoBehaviour:
     - rid: 4244087758780629011
       type: {class: WeaponProteinFart, ns: , asm: Assembly-CSharp}
       data:
-        _damageMin: 4
-        _damageMax: 6
-        _coolDown: 3
-        duration: 1
+        _damageMin: 8
+        _damageMax: 15
+        _coolDown: 2.5
+        duration: 0.75
         fartArea: {fileID: 1302000748841523032, guid: 90d7d25dc502d1747868517d54692b37, type: 3}
         _speed: 0
-        _radius: 5
+        _radius: 3.5

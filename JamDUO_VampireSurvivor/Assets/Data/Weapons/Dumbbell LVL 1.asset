@@ -22,7 +22,7 @@ MonoBehaviour:
       type: {class: WeaponDumbbell, ns: , asm: Assembly-CSharp}
       data:
         _damageMin: 10
-        _damageMax: 10
-        _coolDown: 1.5
+        _damageMax: 15
+        _coolDown: 1.2
         _prefab: {fileID: 8546515989164397420, guid: 427725f8344a3d1419a945bccb0947ea, type: 3}
         _speed: 5

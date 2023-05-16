@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1585806778638694946}
   - component: {fileID: 6527061569497526152}
   - component: {fileID: 5663031380114518126}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PR_Hotdog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,6 +135,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2c71f5a13d8c62b48a07c7443db9702f, type: 3}
       propertyPath: m_Name
       value: S_Hotdog
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2c71f5a13d8c62b48a07c7443db9702f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c71f5a13d8c62b48a07c7443db9702f, type: 3}

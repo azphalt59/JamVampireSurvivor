@@ -13,10 +13,18 @@ MonoBehaviour:
   m_Name: OlympicBar
   m_EditorClassIdentifier: 
   _weapon:
-    rid: -2
+    rid: 3428052226473459712
   _slotIndex: 1
+  _projectileCount: 1
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    - rid: 3428052226473459712
+      type: {class: WeaponOlympic, ns: , asm: Assembly-CSharp}
+      data:
+        _damageMin: 8
+        _damageMax: 15
+        _coolDown: 2
+        _projectileCount: 1
+        _prefab: {fileID: 8546515989164397420, guid: 36b9dfb51ab5f334e9f360e248e18c61, type: 3}
+        _speed: 5
