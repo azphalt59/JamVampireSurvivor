@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Unlock ExplosifPill
   m_EditorClassIdentifier: 
   _description: "D\xE9bloque la pillule explosive !"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 0464f08140d84e146908afeb712f0ece, type: 3}
   _upgrade:
     rid: 4244087773733847040
   _nextUpgrades: []

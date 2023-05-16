@@ -77,11 +77,14 @@ public class EnemyController : Unit
     public override void Hit(float damage)
     {
         _life -= damage;
-        if(GetComponent<AudioSource>() == null)
+        float rand = UnityEngine.Random.Range(0.7f, 1.4f);
+        if (GetComponent<AudioSource>() == null)
         {
             AudioSource a = gameObject.AddComponent<AudioSource>();
             a.playOnAwake = false;
             a.clip = MainGameplay.Instance.EnemyHit;
+            a.pitch = rand;
+            a.volume = 0.5f;
             a.Play();
             Destroy(a, 3f);
         }
@@ -90,6 +93,8 @@ public class EnemyController : Unit
             AudioSource a = gameObject.GetComponent<AudioSource>();
             a.playOnAwake = false;
             a.clip = MainGameplay.Instance.EnemyHit;
+            a.pitch = rand;
+            a.volume = 0.5f;
             a.Play();
             Destroy(a, 3f);
         }

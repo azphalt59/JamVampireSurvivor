@@ -105,12 +105,14 @@ public class PlayerController : Unit
         if (_isDead)
             return;
 
+        float rand = UnityEngine.Random.Range(1f, 1.2f);
         _life -= damage;
         if (GetComponent<AudioSource>() == null)
         {
             AudioSource a = gameObject.AddComponent<AudioSource>();
             a.playOnAwake = false;
             a.volume = 0.25f;
+            a.pitch = 1;
             a.clip = MainGameplay.Instance.PlayerHit;
             if (!a.isPlaying)
                 a.Play();
@@ -122,6 +124,7 @@ public class PlayerController : Unit
             a.playOnAwake = false;
             a.clip = MainGameplay.Instance.PlayerHit;
             a.volume = 0.25f;
+            a.pitch = 1;
             if(!a.isPlaying)
                 a.Play();
             Destroy(a, 3f);
@@ -198,5 +201,6 @@ public class PlayerController : Unit
     {
         float valueToAdd = moveSpeed * (multiplier - 1.0f);
         moveSpeed += valueToAdd;
+        playerAnimator.speed += valueToAdd;
     }
 }
