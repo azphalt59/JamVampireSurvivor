@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using DG.Tweening;
 
 /// <summary>
 /// Represents an enemy who's moving toward the player
@@ -23,7 +24,10 @@ public class EnemyController : Unit
         _player = MainGameplay.Instance.Player.gameObject;
     }
 
-
+    private void Start()
+    {
+        UnScale();
+    }
     public void Initialize(GameObject player, EnemyData data)
     {
         _player = player;
@@ -36,6 +40,8 @@ public class EnemyController : Unit
 
     private void Update()
     {
+        
+
         if (_life <= 0)
             return;
 
@@ -45,12 +51,22 @@ public class EnemyController : Unit
             player.Hit(Time.deltaTime * _data.DamagePerSeconds);
         }
     }
-
+    
     void FixedUpdate()
     {
         MoveToPlayer();
     }
-
+    
+    private void UpScale()
+    {
+       
+        transform.DOScale(1.2f, 0.4f).OnComplete(UnScale);
+    }
+    private void UnScale()
+    {
+        Debug.Log("Unscale");
+        transform.DOScale(0.8f, 0.4f).OnComplete(UpScale);
+    }
     private void MoveToPlayer()
     {
         transform.position = Vector3.MoveTowards(transform.position, _player.transform.position, Time.deltaTime * _data.MoveSpeed);

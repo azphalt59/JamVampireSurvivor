@@ -48,7 +48,7 @@ public class WavesManager : MonoBehaviour
             float rand2 = Random.Range(_bottomLeft.transform.position.z, _topRight.transform.position.z);
 
             Vector3 spawnPosition = new Vector3(rand1, 0, rand2);
-            spawnPosition.y = data.Enemy.Prefab.GetComponent<Collider>().bounds.size.y * 0.5f;
+            spawnPosition.y = data.Enemy.Prefab.GetComponent<Collider>().bounds.size.y * 0.5f - 0.6f;
             spawnPosition.Normalize();
 
             Vector3 tempPosition = MainGameplay.Instance.Player.transform.position + spawnPosition * data.SpawnDistance;

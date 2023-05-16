@@ -15,5 +15,5 @@ MonoBehaviour:
   _life: 4
   _damagePerSeconds: 8
   _moveSpeed: 3.7
-  _xp: 50
+  _xp: 30
   _prefab: {fileID: 4529915882115404092, guid: 73bd2042d9401154a8bfeb11e7073759, type: 3}
