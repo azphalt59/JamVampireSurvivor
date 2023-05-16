@@ -1424,6 +1424,7 @@ MonoBehaviour:
   _data: {fileID: 11400000, guid: ce779eea9edaf8e4cb7d372f9539eeb5, type: 2}
   _gameUIManager: {fileID: 1219623453}
   _prefabXp: {fileID: 6183063873905482681, guid: b0a3c9e3ad3e23e43815680396aa9114, type: 3}
+  _hitFx: {fileID: 0}
 --- !u!114 &1219623452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1849,6 +1850,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1054354221}
     m_Modifications:
+    - target: {fileID: 4091427664267338600, guid: 248286b08eb56d346b11dbe1a7d9a1f4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 4598722261722877096, guid: 248286b08eb56d346b11dbe1a7d9a1f4, type: 3}
       propertyPath: m_Name
       value: Lifebar
@@ -1858,12 +1863,16 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4779778596248797820, guid: 248286b08eb56d346b11dbe1a7d9a1f4, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779778596248797820, guid: 248286b08eb56d346b11dbe1a7d9a1f4, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4779778596248797820, guid: 248286b08eb56d346b11dbe1a7d9a1f4, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4779778596248797820, guid: 248286b08eb56d346b11dbe1a7d9a1f4, type: 3}
       propertyPath: m_Color.r
@@ -1876,6 +1885,18 @@ PrefabInstance:
     - target: {fileID: 5615634789165536332, guid: 248286b08eb56d346b11dbe1a7d9a1f4, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615634789165536332, guid: 248286b08eb56d346b11dbe1a7d9a1f4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.423582
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615634789165536332, guid: 248286b08eb56d346b11dbe1a7d9a1f4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.423582
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615634789165536332, guid: 248286b08eb56d346b11dbe1a7d9a1f4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.423582
       objectReference: {fileID: 0}
     - target: {fileID: 5615634789165536332, guid: 248286b08eb56d346b11dbe1a7d9a1f4, type: 3}
       propertyPath: m_LocalPosition.x
