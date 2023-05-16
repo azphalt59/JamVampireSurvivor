@@ -133,7 +133,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b7c510ecaddd0a04cb3c0e2b2419de12, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: fd8b7696240aa1043ab6a440bcde2b45, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b146db1a4e43ff448ec7271dec941d3, type: 2}
+    - target: {fileID: -5754084199372789682, guid: b7c510ecaddd0a04cb3c0e2b2419de12, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 3390558720134950976, guid: 95d48890f4896f44a9344689649478bf, type: 3}
     - target: {fileID: 919132149155446097, guid: b7c510ecaddd0a04cb3c0e2b2419de12, type: 3}
       propertyPath: m_Name
       value: "S_Halt\xE8res"
