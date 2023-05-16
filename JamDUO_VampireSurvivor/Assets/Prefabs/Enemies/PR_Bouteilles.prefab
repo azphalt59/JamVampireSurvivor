@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4868809836076157184}
   - component: {fileID: 8923990116892475482}
   - component: {fileID: 1416767701083096028}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PR_Bouteilles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,6 +135,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1d1b8445fc0fa7347baf4b83394d066e, type: 3}
       propertyPath: m_Name
       value: S_bouteille
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1d1b8445fc0fa7347baf4b83394d066e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d1b8445fc0fa7347baf4b83394d066e, type: 3}

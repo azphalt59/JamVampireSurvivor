@@ -64,7 +64,6 @@ public class EnemyController : Unit
     }
     private void UnScale()
     {
-        Debug.Log("Unscale");
         transform.DOScale(0.8f, 0.4f).OnComplete(UpScale);
     }
     private void MoveToPlayer()

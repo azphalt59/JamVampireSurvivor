@@ -18,7 +18,8 @@ MonoBehaviour:
   _sprite: {fileID: 0}
   _upgrade:
     rid: 4244087758780628994
-  _nextUpgrades: []
+  _nextUpgrades:
+  - {fileID: 11400000, guid: 41f86b38f8e55704db6c418c8b133ae9, type: 2}
   references:
     version: 2
     RefIds:

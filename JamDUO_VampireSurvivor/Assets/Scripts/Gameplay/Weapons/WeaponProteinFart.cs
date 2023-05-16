@@ -23,9 +23,11 @@ public class WeaponProteinFart : WeaponBase
         }
         _timerCoolDown -= _coolDown;
         var playerPosition = MainGameplay.Instance.Player.transform.position;
-        GameObject go = GameObject.Instantiate(fartArea, playerPosition, Quaternion.identity, MainGameplay.Instance.Player.transform); ;
+        GameObject go = GameObject.Instantiate(fartArea, playerPosition, Quaternion.identity, MainGameplay.Instance.Player.transform);
+        go.transform.localScale = new Vector3(_radius/3, _radius/3, _radius / 3);
         go.GetComponent<ProteinFart>().SetDamage(GetDamage());
+        
         go.GetComponent<CapsuleCollider>().radius = _radius;
-
+     
     }
 }

@@ -33,6 +33,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.position += _direction * _speed * Time.deltaTime;
+        transform.position = new Vector3(transform.position.x, 0.3f, transform.position.z);
         transform.Rotate(0, 240f * Time.deltaTime, 0);
     }
 
@@ -40,12 +41,14 @@ public class Bullet : MonoBehaviour
     {
         var other = HitWithParent.GetComponent<Unit>(col);
 
-      
-        if (other.Team != _team)
+        if (other == null)
         {
-            GameObject.Destroy(gameObject);
-
+  
+        }
+        else if (other.Team != _team)   
+        {
             other.Hit(_damage);
+            GameObject.Destroy(gameObject);
         }
     }
 }
