@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Sol
+  m_Name: M_Pilul
   m_Shader: {fileID: 4800000, guid: 8fa84e1c8f3a97b4bb416e8eb087630e, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
@@ -46,16 +46,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 49244b2ff4e40584f9df659b722abaa2, type: 3}
-        m_Scale: {x: 35, y: 35}
+        m_Texture: {fileID: 2800000, guid: d5144c5a737e1dc46b6be1632e44e9ba, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 00a4d6c639d51b04eae3e30c2da47887, type: 3}
-        m_Scale: {x: 35, y: 35}
+        m_Texture: {fileID: 2800000, guid: f8dbd130b736a5340abb0c1922497b23, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -80,14 +80,14 @@ Material:
     - _GradIntensity: 0
     - _GradYCap: 0
     - _HighIntensity: 2.7
-    - _LightScalar: 1.03
-    - _LowIntensity: 2.57
+    - _LightScalar: 1.72
+    - _LowIntensity: 2.14
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _OutlineSize: 20
     - _Parallax: 0.02
-    - _RampLevels: 5
+    - _RampLevels: 3
     - _RimAlpha: 0.033
     - _RimDropOff: 0.651
     - _RimPower: 0
