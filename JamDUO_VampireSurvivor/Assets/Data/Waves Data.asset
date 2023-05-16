@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c800c2e66b018419c40ccaf776a819, type: 3}
+  m_Name: Waves Data
+  m_EditorClassIdentifier: 
+  _waves:
+  - _timeToStart: 2
+    _timesToRepeat: 6
+    _repeatTimer: 5
+    _enemyCount: 4
+    _enemy: {fileID: 11400000, guid: 43b45f9e0ae89644ebc262d9d7646403, type: 2}
+    _movementType: 0
+    _spawnDistance: 40
+  - _timeToStart: 12
+    _timesToRepeat: 2
+    _repeatTimer: 8
+    _enemyCount: 3
+    _enemy: {fileID: 11400000, guid: d21d108016de4ac458bc0ec496d91927, type: 2}
+    _movementType: 0
+    _spawnDistance: 15
+  - _timeToStart: 25
+    _timesToRepeat: 2
+    _repeatTimer: 1
+    _enemyCount: 4
+    _enemy: {fileID: 11400000, guid: b7a9f04459ab9ed45858805ddc043532, type: 2}
+    _movementType: 0
+    _spawnDistance: 8
+  - _timeToStart: 7
+    _timesToRepeat: 2
+    _repeatTimer: 5
+    _enemyCount: 2
+    _enemy: {fileID: 11400000, guid: 672d9c22e07eba7438132f8ca113ae1e, type: 2}
+    _movementType: 0
+    _spawnDistance: 12
+  - _timeToStart: 15
+    _timesToRepeat: 2
+    _repeatTimer: 6
+    _enemyCount: 2
+    _enemy: {fileID: 11400000, guid: d21d108016de4ac458bc0ec496d91927, type: 2}
+    _movementType: 0
+    _spawnDistance: 12

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9abf730199d69e9438dd07125b6d3c8a, type: 3}
+  m_Name: Player Data
+  m_EditorClassIdentifier: 
+  _life: 100
+  _moveSpeed: 5
+  _rotationSpeed: 5
+  _weapons:
+  - {fileID: 11400000, guid: cebea402a285e0945b7e30b7623dfe71, type: 2}
+  - {fileID: 11400000, guid: d2b7ff0ed11beab4899a65275d02ad35, type: 2}
+  _upgrades:
+  - {fileID: 11400000, guid: 41f86b38f8e55704db6c418c8b133ae9, type: 2}
+  - {fileID: 11400000, guid: 0ae8c8370d27f4d4cbf6293843825497, type: 2}
+  - {fileID: 11400000, guid: f871ed7837f2b4346ba37929cb970752, type: 2}
+  - {fileID: 11400000, guid: e8adecd40ec26c843954e87cbda47998, type: 2}
+  - {fileID: 11400000, guid: 8c5404d5a1555e74881c13c533cf0c82, type: 2}
+  - {fileID: 11400000, guid: da5e3fe0317a8244f9fc201c42ea14e9, type: 2}
+  - {fileID: 11400000, guid: 088822c00ff88334899b904938fbabfa, type: 2}
+  - {fileID: 11400000, guid: d5f1e1e76726aac43a613dea3959e361, type: 2}

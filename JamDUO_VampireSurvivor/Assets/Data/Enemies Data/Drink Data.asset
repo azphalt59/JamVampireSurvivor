@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc039ccc39f388b4d87fcee0a88c2b02, type: 3}
+  m_Name: Drink Data
+  m_EditorClassIdentifier: 
+  _life: 20
+  _damagePerSeconds: 2
+  _moveSpeed: 2
+  _xp: 15
+  _prefab: {fileID: 3572938476981573560, guid: 2e24abbb73a50694687d9d610c8554af, type: 3}

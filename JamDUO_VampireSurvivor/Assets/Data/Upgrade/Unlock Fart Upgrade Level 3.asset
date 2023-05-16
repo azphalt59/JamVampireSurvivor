@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a8eaf7f7549014c8d97c971d54d2b0, type: 3}
+  m_Name: Unlock Fart Upgrade Level 3
+  m_EditorClassIdentifier: 
+  _description: 
+  _sprite: {fileID: 0}
+  _upgrade:
+    rid: 4244087758780629010
+  _nextUpgrades: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 4244087758780629010
+      type: {class: WeaponUpgrade, ns: , asm: Assembly-CSharp}
+      data:
+        _data: {fileID: 11400000, guid: f3453481e46e3794dbebb44ddda15c89, type: 2}

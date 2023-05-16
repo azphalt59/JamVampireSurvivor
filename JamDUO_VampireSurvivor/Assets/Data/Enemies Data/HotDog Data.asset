@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc039ccc39f388b4d87fcee0a88c2b02, type: 3}
+  m_Name: HotDog Data
+  m_EditorClassIdentifier: 
+  _life: 4
+  _damagePerSeconds: 8
+  _moveSpeed: 3.7
+  _xp: 50
+  _prefab: {fileID: 4529915882115404092, guid: 73bd2042d9401154a8bfeb11e7073759, type: 3}
