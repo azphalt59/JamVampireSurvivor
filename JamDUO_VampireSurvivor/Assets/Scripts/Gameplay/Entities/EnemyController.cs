@@ -94,9 +94,22 @@ public class EnemyController : Unit
         MainGameplay.Instance.Enemies.Remove(this);
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.GetComponent<Collider>().enabled = false;
-        GameObject.Destroy(gameObject, 1f);
-        var xp = GameObject.Instantiate(MainGameplay.Instance.PrefabXP, transform.position, Quaternion.identity);
-        xp.GetComponent<CollectableXp>().Initialize(_xpValue);
+        GameObject.Destroy(gameObject, 1.5f);
+
+        int random = UnityEngine.Random.Range(0, 101);
+        if (random <= 50)
+        {
+            var xp = GameObject.Instantiate(MainGameplay.Instance.PrefabXP, transform.position, Quaternion.identity);
+            xp.GetComponent<CollectableXp>().Initialize(_xpValue);
+        }
+        if(random <= 75)
+        {
+            int random2 = UnityEngine.Random.Range(0, MainGameplay.Instance.OnKillFx.Count);
+            var fx = GameObject.Instantiate(MainGameplay.Instance.OnKillFx[random2], transform.position, Quaternion.identity);
+            Destroy(fx, 1f);
+        }
+
+       
     }
 
   

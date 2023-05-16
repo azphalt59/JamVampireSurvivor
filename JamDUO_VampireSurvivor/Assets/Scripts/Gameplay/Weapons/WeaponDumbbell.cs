@@ -28,6 +28,7 @@ public class WeaponDumbbell : WeaponBase
         Vector3 direction = enemy.transform.position - playerPosition;
         if (direction.sqrMagnitude > 0)
         {
+           
             direction.Normalize();
             go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
         }

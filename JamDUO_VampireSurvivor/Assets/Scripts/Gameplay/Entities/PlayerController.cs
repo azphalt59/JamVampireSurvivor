@@ -12,6 +12,7 @@ public class PlayerController : Unit
 {
     [SerializeField] PlayerData _playerData;
     [SerializeField] LevelUpData _levelUpData;
+    [SerializeField] Animator playerAnimator;
 
     [SerializeField] LifeBar _lifeBar;
 
@@ -82,6 +83,13 @@ public class PlayerController : Unit
         float horizontalMvt = Input.GetAxisRaw("Horizontal");
         float verticalMvt = Input.GetAxisRaw("Vertical");
         Vector3 movementVector = new Vector3(horizontalMvt, 0, verticalMvt).normalized;
+        if(movementVector != Vector3.zero)
+        {
+            playerAnimator.SetBool("IsMoving", true);
+        } else if (movementVector == Vector3.zero)
+        {
+            playerAnimator.SetBool("IsMoving", false);
+        }
         transform.position += moveSpeed * Time.deltaTime * movementVector;
         
         Vector3 lookDir = (transform.position + movementVector) - transform.position;

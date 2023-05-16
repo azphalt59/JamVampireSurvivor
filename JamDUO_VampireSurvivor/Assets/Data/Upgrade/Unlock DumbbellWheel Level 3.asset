@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a8eaf7f7549014c8d97c971d54d2b0, type: 3}
+  m_Name: Unlock DumbbellWheel Level 3
+  m_EditorClassIdentifier: 
+  _description: "Le bodybuilder projette un cercle d'halt\xE8res autour de lui"
+  _sprite: {fileID: 0}
+  _upgrade:
+    rid: 3428052229981208577
+  _nextUpgrades: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3428052229981208577
+      type: {class: WeaponUpgrade, ns: , asm: Assembly-CSharp}
+      data:
+        _data: {fileID: 11400000, guid: 4e5c80042738b254cb01b9d2becefbdc, type: 2}
