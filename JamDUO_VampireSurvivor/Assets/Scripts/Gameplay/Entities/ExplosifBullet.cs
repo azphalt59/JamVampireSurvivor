@@ -12,6 +12,8 @@ public class ExplosifBullet : MonoBehaviour
     [SerializeField] float height = 2f;
     [SerializeField] GameObject mesh;
     [SerializeField] GameObject area;
+    [SerializeField] AudioClip explosionClip;
+
 
     float _speed = 10;
     float _damage = 5;
@@ -60,6 +62,13 @@ public class ExplosifBullet : MonoBehaviour
 
     void Explosion(Vector3 pos, Vector3 dir)
     {
+        
+        AudioSource a = gameObject.AddComponent<AudioSource>();
+        a.playOnAwake = false;
+        a.clip = explosionClip ;
+        a.Play();
+        Destroy(a, 1.5f); ;
+
         move = false;
         ExplosifPillFX.Play();
         Destroy(gameObject, 1.5f);

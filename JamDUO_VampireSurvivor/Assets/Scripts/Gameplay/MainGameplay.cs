@@ -36,8 +36,15 @@ public class MainGameplay : MonoBehaviour
     [SerializeField] GameObject _hitFx;
     [SerializeField] List<GameObject> _onKillFx;
 
+    [SerializeField] GameObject lose;
+    [SerializeField] GameObject win;
+
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip levelupClip;
+
+
     #endregion
-    
+
     #region Properties
 
     public PlayerController Player => _player;
@@ -124,8 +131,11 @@ public class MainGameplay : MonoBehaviour
 
     private void OnLevelUp(int level)
     {
+        audioSource.clip = levelupClip;
+        audioSource.Play();
         Pause();
-
+        
+        
         List<UpgradeData> upgrades = new List<UpgradeData>();
         upgrades.AddRange(_player.UpgradesAvailable);
 
@@ -148,12 +158,14 @@ public class MainGameplay : MonoBehaviour
     void OnPlayerDeath()
     {
         State = GameState.GameOver;
+        lose.GetComponent<SceneLoader>().LoadScene();
         _gameUIManager.DisplayGameOver();
     }
 
     void SetVictory()
     {
         State = GameState.GameOver;
+        win.GetComponent<SceneLoader>().LoadScene();
         _gameUIManager.DisplayVictory();
     }
     
