@@ -15,7 +15,7 @@ MonoBehaviour:
   _description: '+ 60% speed
 
 '
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 6fafe17dfd7744d42842abcfc0f26787, type: 3}
   _upgrade:
     rid: 4244087758780628996
   _nextUpgrades: []
