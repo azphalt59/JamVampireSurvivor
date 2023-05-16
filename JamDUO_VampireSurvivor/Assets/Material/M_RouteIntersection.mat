@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Sol
+  m_Name: M_RouteIntersection
   m_Shader: {fileID: 4800000, guid: 8fa84e1c8f3a97b4bb416e8eb087630e, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
@@ -46,16 +46,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 49244b2ff4e40584f9df659b722abaa2, type: 3}
-        m_Scale: {x: 35, y: 35}
+        m_Texture: {fileID: 2800000, guid: 0aaef052dd4fca24bbb64f056b4c8595, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 00a4d6c639d51b04eae3e30c2da47887, type: 3}
-        m_Scale: {x: 35, y: 35}
+        m_Texture: {fileID: 2800000, guid: f9270955e322bcc4fa4a0f43d05b7162, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -79,16 +79,16 @@ Material:
     - _GlossyReflections: 1
     - _GradIntensity: 0
     - _GradYCap: 0
-    - _HighIntensity: 2.7
-    - _LightScalar: 1.03
-    - _LowIntensity: 1.7
+    - _HighIntensity: 3.2
+    - _LightScalar: 10
+    - _LowIntensity: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _OutlineSize: 20
     - _Parallax: 0.02
     - _RampLevels: 5
-    - _RimAlpha: 0
+    - _RimAlpha: 0.033
     - _RimDropOff: 0.651
     - _RimPower: 0
     - _SmoothnessTextureChannel: 0
@@ -100,8 +100,8 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
-    - _HighColor: {r: 1, g: 0.8915094, b: 0.8915094, a: 1}
-    - _LowColor: {r: 0.8455154, g: 0.8066038, b: 1, a: 1}
+    - _HighColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LowColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 0.17251018, g: 0.13777144, b: 0.2264151, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
