@@ -77,6 +77,24 @@ public class EnemyController : Unit
     public override void Hit(float damage)
     {
         _life -= damage;
+        if(GetComponent<AudioSource>() == null)
+        {
+            AudioSource a = gameObject.AddComponent<AudioSource>();
+            a.playOnAwake = false;
+            a.clip = MainGameplay.Instance.EnemyHit;
+            a.Play();
+            Destroy(a, 3f);
+        }
+        else
+        {
+            AudioSource a = gameObject.GetComponent<AudioSource>();
+            a.playOnAwake = false;
+            a.clip = MainGameplay.Instance.EnemyHit;
+            a.Play();
+            Destroy(a, 3f);
+        }
+        
+       
         HitFx.gameObject.transform.position = transform.position;
         if(Life>0)
             HitFx.Play();

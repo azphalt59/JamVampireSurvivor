@@ -182,7 +182,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &276532291
 GameObject:
@@ -844,7 +844,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3f8693955c358734b89f2fea0180d469, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.349
+  m_Volume: 0.089
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1137,6 +1137,8 @@ MonoBehaviour:
   win: {fileID: 1641586293}
   audioSource: {fileID: 1219623454}
   levelupClip: {fileID: 8300000, guid: e944e9e8617f89b47a9ba45f127b9ffd, type: 3}
+  playerHit: {fileID: 8300000, guid: c15b89e0ec4c48144835e6d5528689ab, type: 3}
+  enemyHit: {fileID: 8300000, guid: 4a5a553be17ebcb49bca1ed3c22f3542, type: 3}
 --- !u!114 &1219623452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1378,7 +1380,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1678161981 stripped
 MonoBehaviour:

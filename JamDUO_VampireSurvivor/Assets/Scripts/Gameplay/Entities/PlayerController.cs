@@ -106,7 +106,26 @@ public class PlayerController : Unit
             return;
 
         _life -= damage;
-
+        if (GetComponent<AudioSource>() == null)
+        {
+            AudioSource a = gameObject.AddComponent<AudioSource>();
+            a.playOnAwake = false;
+            a.volume = 0.25f;
+            a.clip = MainGameplay.Instance.PlayerHit;
+            if (!a.isPlaying)
+                a.Play();
+            Destroy(a, 3f);
+        }
+        else
+        {
+            AudioSource a = gameObject.GetComponent<AudioSource>();
+            a.playOnAwake = false;
+            a.clip = MainGameplay.Instance.PlayerHit;
+            a.volume = 0.25f;
+            if(!a.isPlaying)
+                a.Play();
+            Destroy(a, 3f);
+        }
         _lifeBar.SetValue(Life, LifeMax);
 
         if (Life <= 0)

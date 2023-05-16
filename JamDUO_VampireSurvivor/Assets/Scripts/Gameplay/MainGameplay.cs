@@ -41,6 +41,8 @@ public class MainGameplay : MonoBehaviour
 
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip levelupClip;
+    [SerializeField] AudioClip playerHit;
+    [SerializeField] AudioClip enemyHit;
 
 
     #endregion
@@ -55,6 +57,8 @@ public class MainGameplay : MonoBehaviour
     public GameUIManager GameUIManager => _gameUIManager;
     public GameObject HitFx => _hitFx;
     public List<GameObject> OnKillFx => _onKillFx;
+    public AudioClip EnemyHit => enemyHit;
+    public AudioClip PlayerHit => playerHit;
 
     #endregion
 
